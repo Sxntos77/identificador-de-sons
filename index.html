@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>
+            Identificador de objetos
+        </h1>
+        <h3>
+            o modelo foi treinado para reconhecer teclado,celular e parede
+        </h3>
+        <hr>
+        <b>
+        teclado
+        <hr>
+        celular
+        <hr>
+        parede
+        <hr>
+        </b>
+        <label>Carregue uma imagem de algum desses objetos</label>
+        <br>
+        <br>
+        <input type="file" id="img-input">
+        <br>
+        <br>
+        <div><img src="" id="preview"></div>
+        <br>
+        <button onclick="check()"  class="button-74" role="button">Identificar</button>
+        <p>Nome: <span id="nomeObjeto"></span></p>
+        <p>Precisão:  <span id="precisao"></span></p>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>
